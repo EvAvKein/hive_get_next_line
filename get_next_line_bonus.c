@@ -6,7 +6,7 @@
 /*   By: ekeinan <ekeinan@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 19:26:47 by ekeinan           #+#    #+#             */
-/*   Updated: 2024/11/28 14:41:02 by ekeinan          ###   ########.fr       */
+/*   Updated: 2024/11/29 11:28:36 by ekeinan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,10 +86,10 @@ char	*get_next_line(int fd)
 	static char		buffers[FILES_CAPACITY][BUFFER_SIZE + 1];
 	ssize_t			buffer_nl_i;
 	char			*line;
-	
+
 	buffer_nl_i = -1;
-	if (BUFFER_SIZE < 1 || fd < 0 || FILES_CAPACITY < 1 || fd > FILES_CAPACITY - 1
-		|| !initialize_line(&line, buffers[fd], &buffer_nl_i))
+	if (BUFFER_SIZE < 1 || FILES_CAPACITY < 1 || fd > FILES_CAPACITY - 1
+		|| fd < 0 || !initialize_line(&line, buffers[fd], &buffer_nl_i))
 		return (NULL);
 	if (buffer_nl_i >= 0)
 		return (line);
