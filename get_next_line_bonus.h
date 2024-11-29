@@ -6,7 +6,7 @@
 /*   By: ekeinan <ekeinan@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 09:52:30 by ekeinan           #+#    #+#             */
-/*   Updated: 2024/11/29 11:31:02 by ekeinan          ###   ########.fr       */
+/*   Updated: 2024/11/29 17:55:48 by ekeinan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # endif
 
 # ifndef FILES_CAPACITY
-#  define FILES_CAPACITY 5
+#  define FILES_CAPACITY 10
 # endif
 
 size_t	ft_strlen(char *s);
