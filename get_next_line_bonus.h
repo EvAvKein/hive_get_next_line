@@ -6,7 +6,7 @@
 /*   By: ekeinan <ekeinan@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 09:52:30 by ekeinan           #+#    #+#             */
-/*   Updated: 2024/11/29 17:55:48 by ekeinan          ###   ########.fr       */
+/*   Updated: 2024/12/19 20:24:19 by ekeinan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 
 # ifndef FILES_CAPACITY
 #  define FILES_CAPACITY 10
+// Mind that 0-2 are taken by default: stdin, stdout, stderr
 # endif
 
 size_t	ft_strlen(char *s);
