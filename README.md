@@ -26,12 +26,13 @@ The `_bonus` version supports reading multiple files without overriding eachothe
 
 > Testing was done using a lot of my own files, plus [gnlTester](https://github.com/Tripouille/gnlTester) & [gnl-station-tester](https://github.com/kodpe/gnl-station-tester)
 
-- In your program's header file or relevant C files:
-  - Singular file: `#include "[path to get_next_line.h]"`
-  - Multiple files: `#include "[path to get_next_line_bonus.h]"`
-- Compile with your program by running:
-  - Singular file: `clang get_next_line.c get_next_line_utils.c [your program's files]` (optionally adding `-D BUFFER_SIZE=[number]` to override the default size)
-  - Multiple files: `clang get_next_line.c get_next_line_utils.c [your program's files]` (optionally adding the above BUFFER_SIZE override, and/or `-D FILES_CAPACITY=[number]` to override the default limit of 7)
+### Single buffer/file
+- Add `#include "[path to get_next_line.h]"` in your program's header file or relevant C files
+- Compile by running `clang get_next_line.c get_next_line_utils.c [your program's files]` (optionally adding `-D BUFFER_SIZE=[number]` to override the default size)
+
+### Multiple buffers/files
+- Add `#include "[path to get_next_line_bonus.h]"` in your program's header file or relevant C files
+- Compile by running `clang get_next_line.c get_next_line_utils.c [your program's files]` (optionally adding the `-D BUFFER_SIZE=[number]` override, and/or `-D FILES_CAPACITY=[number]` to override the default limit of 7)
 
 ---
 
